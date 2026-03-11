@@ -1,0 +1,13 @@
+
+> portifolio@0.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.77 kB │ gzip:  0.43 kB
+dist/assets/index-BM-eAN_A.css   19.89 kB │ gzip:  4.31 kB
+dist/assets/index-lIzejP3a.js   206.96 kB │ gzip: 64.19 kB
+✓ built in 2.22s
