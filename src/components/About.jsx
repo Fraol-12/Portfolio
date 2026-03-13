@@ -8,7 +8,7 @@ const About = () => {
 
                 <div className="max-w-3xl flex flex-col gap-8">
                     <p className="text-xl text-secondary leading-snug">
-                        I am a senior full-stack engineer with extensive experience in designing and building scalable, maintainable, and high-performance backend systems. My expertise lies in architecting robust RESTful APIs, distributed systems, and full-stack applications that solve complex real-world problems efficiently.
+                        I am full-stack engineer with extensive experience in designing and building scalable, maintainable, and high-performance backend systems. My expertise lies in architecting robust RESTful APIs, distributed systems, and full-stack applications that solve complex real-world problems efficiently.
                     </p>
 
                     <p className="text-xl text-secondary leading-snug">

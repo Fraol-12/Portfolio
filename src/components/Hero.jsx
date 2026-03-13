@@ -13,7 +13,7 @@ const Hero = () => {
                             Firaol Merga
                         </h1>
                         <p className="text-xl md:text-2xl text-primary font-medium">
-                            Computer Science Student | Fullstack Developer
+                            Computer Science Student | Full-Stack Developer
                         </p>
                         <p className="max-w-2xl text-secondary">
                             Addis Ababa, Ethiopia

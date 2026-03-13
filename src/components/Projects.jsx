@@ -3,21 +3,18 @@ import React from 'react';
 const Projects = () => {
     const projects = [
         {
-
             title: 'Encore (YouTube → Spotify Sync)',
             description: 'Backend service that converts YouTube playlists to Spotify using intelligent track matching. ',
             tech: ['Python', 'Django', 'DRF', 'Celery', 'Redis', 'PostgreSQL'],
             live: 'https://encore-w2ay.onrender.com/encore/ ',
             github: 'https://github.com/Fraol-12/encore',
         },
-
         {
             title: 'Library Management API',
             description: 'Professional RESTful backend for a library system built with Django and Django REST Framework.',
             tech: ['Python', 'Django ', 'DRF', 'PostgreSQL', 'SimpleJWT','Docker'],
             live: 'https://library-management-api-ym28.onrender.com/',
             github: 'https://github.com/Fraol-12/library-management-api',
-        
         },
         {
             title: 'Social Media API',
@@ -59,6 +56,8 @@ const Projects = () => {
                                 <div className="flex gap-6 items-center pt-4">
                                     <a
                                         href={project.live}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="text-sm font-medium text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link"
                                     >
                                         Live Demo
@@ -68,6 +67,8 @@ const Projects = () => {
                                     </a>
                                     <a
                                         href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="text-sm font-medium text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link"
                                     >
                                         GitHub Repository
