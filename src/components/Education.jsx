@@ -19,7 +19,6 @@ const Education = () => {
                         </p>
                     </div>
 
-                    <div className="w-12 h-px bg-border mx-auto"></div>
 
                     {/* Certification */}
                     <div className="flex flex-col gap-4 text-left">

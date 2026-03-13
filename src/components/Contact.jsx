@@ -49,8 +49,14 @@ const Contact = () => {
 
     return (
         <section id="contact" className="section-spacing border-t border-border">
-            <div className="max-w-container flex flex-col items-left gap-6">
-                <h2 className="text-primary text-center">Contact Me</h2>
+            <div className="max-w-container flex flex-col items-center gap-12">
+                <div className="flex flex-col items-center gap-4 text-center">
+                    <h2 className="text-primary">Contact Me</h2>
+                    <p className="max-w-2xl text-secondary">
+                        Open to collaborations, projects, and new opportunities.
+                    </p>
+                </div>
+
 
                 <div className="flex flex-wrap justify-center gap-8 md:gap-6 py-4">
                     {socialLinks.map((link) => (

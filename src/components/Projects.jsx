@@ -3,32 +3,35 @@ import React from 'react';
 const Projects = () => {
     const projects = [
         {
-            title: 'Library Management API',
-            description: 'Production-ready RESTful backend with JWT authentication, borrowing rules, and domain integrity enforcement.',
-            tech: ['Python', 'Django 6', 'DRF', 'PostgreSQL', 'Docker'],
-            live: '#',
-            github: '#',
-        },
-        {
+
             title: 'Encore (YouTube → Spotify Sync)',
-            description: 'Backend system for syncing YouTube playlists to Spotify with background jobs and fuzzy track matching.',
+            description: 'Backend service that converts YouTube playlists to Spotify using intelligent track matching. ',
             tech: ['Python', 'Django', 'DRF', 'Celery', 'Redis', 'PostgreSQL'],
-            live: '#',
-            github: '#',
+            live: 'https://encore-w2ay.onrender.com/encore/ ',
+            github: 'https://github.com/Fraol-12/encore',
+        },
+
+        {
+            title: 'Library Management API',
+            description: 'Professional RESTful backend for a library system built with Django and Django REST Framework.',
+            tech: ['Python', 'Django ', 'DRF', 'PostgreSQL', 'SimpleJWT','Docker'],
+            live: 'https://library-management-api-ym28.onrender.com/',
+            github: 'https://github.com/Fraol-12/library-management-api',
+        
         },
         {
             title: 'Social Media API',
-            description: 'RESTful API with custom user models, token-based authentication, and profile management.',
+            description: 'RESTful backend foundation for a social media platform built with Django REST Framework.',
             tech: ['Python', 'Django', 'DRF', 'PostgreSQL'],
-            live: '#',
-            github: '#',
+            live: 'https://social-media-api-2u8v.onrender.com/',
+            github: 'https://github.com/Fraol-12/social_media_api',
         },
     ];
 
     return (
         <section id="work" className="section-spacing border-t border-border">
             <div className="max-w-container flex flex-col items-center gap-16">
-                <h2 className="text-primary text-center">Selected Work</h2>
+                <h2 className="text-primary text-center">Featured Projects</h2>
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
