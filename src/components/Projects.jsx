@@ -16,6 +16,16 @@ const Projects = () => {
             live: 'https://library-management-api-ym28.onrender.com/',
             github: 'https://github.com/Fraol-12/library-management-api',
         },
+
+
+        {
+            title: 'Library Management Frontend',
+            description: 'Responsive SPA with public catalog, book details, and member dashboard. Implements JWT auth, protected routes, and polished UX patterns.',
+            tech: ['React.js ', 'Tailwind CSS', 'Axios',],
+            live: 'https://library-management-frontend-sepia.vercel.app/',
+            github: 'https://github.com/Fraol-12/library-management-frontend',
+        },
+
         {
             title: 'Social Media API',
             description: 'RESTful backend foundation for a social media platform built with Django REST Framework.',
