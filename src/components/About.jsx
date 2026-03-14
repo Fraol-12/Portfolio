@@ -8,15 +8,15 @@ const About = () => {
 
                 <div className="max-w-3xl flex flex-col gap-8">
                     <p className="text-xl text-secondary leading-snug">
-                        I am full-stack engineer with extensive experience in designing and building scalable, maintainable, and high-performance backend systems. My expertise lies in architecting robust RESTful APIs, distributed systems, and full-stack applications that solve complex real-world problems efficiently.
+                        I am a Computer Science student and backend-focused full-stack developer passionate about building scalable and maintainable web applications. I enjoy designing RESTful APIs and developing full-stack systems that solve real-world problems.
                     </p>
 
                     <p className="text-xl text-secondary leading-snug">
-                        I have a strong focus on clean architecture, domain integrity, and reliable, production-ready code. While I am comfortable across the full stack, I specialize in backend engineering, ensuring systems are performant, maintainable, and secure.
+                        My work primarily focuses on backend development using technologies such as Django, Django REST Framework, and PostgreSQL, while also building modern user interfaces with React and Tailwind CSS.
                     </p>
 
                     <p className="text-xl text-secondary leading-snug">
-                        Passionate about continuous improvement, I actively build production-style projects, adopt modern technologies, and follow best practices to deliver solutions that meet both business and technical goals.
+                        Through building production-style projects, I continuously improve my skills in backend engineering, system design, and modern web development practices, with the long-term goal of becoming an AI engineer.
                     </p>
 
                 </div>

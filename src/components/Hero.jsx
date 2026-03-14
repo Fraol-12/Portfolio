@@ -25,7 +25,7 @@ const Hero = () => {
                             View Work
                         </a>
                         <a 
-                        href="/public/Firaol_Merga_Resume.pdf"
+                        href="/Firaol_Merga_Resume.pdf"
                         download
                         className="btn-secondary"
                         >
