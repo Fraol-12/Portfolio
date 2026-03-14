@@ -20,7 +20,7 @@ const Projects = () => {
 
         {
             title: 'Library Management Frontend',
-            description: 'Responsive SPA with public catalog, book details, and member dashboard. Implements JWT auth, protected routes, and polished UX patterns.',
+            description: 'React SPA for a digital library system with catalog browsing, member dashboard, and authenticated routes.',
             tech: ['React.js ', 'Tailwind CSS', 'Axios',],
             live: 'https://library-management-frontend-sepia.vercel.app/',
             github: 'https://github.com/Fraol-12/library-management-frontend',
