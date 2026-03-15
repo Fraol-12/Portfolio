@@ -27,15 +27,16 @@ const Education = () => {
                     ALX Backend Engineering Graduate
                     </h3>
                     <p className="text-lg text-secondary">
-                    Backend-focused engineering program with hands-on experience building production-ready applications.
+                    Completed the Backend Engineering specialization at ALX Africa, an intensive program focused on building real-world backend systems and scalable APIs. <br />
+                    During the program, I gained hands-on experience building real-world applications and backend services while applying industry best practices in API design, database architecture, and deployment.
                     </p>
                 </div>
                 <ul className="list-disc list-inside text-secondary leading-relaxed space-y-2">
-                    <li>Designed and built scalable RESTful APIs with Django REST Framework.</li>
-                    <li>Implemented secure JWT authentication and role-based access control.</li>
-                    <li>Optimized PostgreSQL database schemas for performance and reliability.</li>
-                    <li>Integrated Redis and Celery for asynchronous tasks and background processing.</li>
-                    <li>Containerized applications using Docker for consistent development and production environments.</li>
+                    <li>Designed and built scalable RESTful APIs using Django REST Framework.</li>
+                    <li>Implemented secure authentication systems with JWT and role-based access control.</li>
+                    <li>Designed and optimized PostgreSQL database schemas.</li>
+                    <li>Implemented asynchronous background processing using Redis and Celery.</li>
+                    <li>Containerized applications with Docker for consistent development and deployment environments.</li>
                 </ul>
                 </div>
                 </div>
