@@ -2,20 +2,26 @@ import React from 'react';
 
 const categories = [
   {
-    title: 'Frontend',
-    skills: ['React.js', 'Tailwind CSS', 'JavaScript'],
+    title: 'Languages',
+    skills: ['Python', 'JavaScript'],
   },
+  {
+    title: 'Frontend',
+    skills: ['React','HTML', 'CSS', 'Tailwind CSS'],
+  },
+
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'Django', 'Python'],
+    skills: ['Django','Node.js', 'Express'],
   },
+
   {
     title: 'Databases',
-    skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL',],
   },
   {
     title: 'DevOps & Tools',
-    skills: ['Docker', 'Git & GitHub', 'Linux', 'Vercel / Render'],
+    skills: ['Docker', 'Git', 'GitHub', 'Linux', 'Vercel', 'Render', 'Neon','Postman','Celery'],
   },
 ];
 

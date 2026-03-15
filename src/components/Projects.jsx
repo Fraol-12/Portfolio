@@ -5,7 +5,7 @@ const Projects = () => {
         {
             title: 'Encore (YouTube → Spotify Sync)',
             description: 'Backend service that converts YouTube playlists to Spotify using intelligent track matching. ',
-            tech: ['Python', 'Django', 'DRF', 'Celery', 'Redis', 'PostgreSQL'],
+            tech: ['Python', 'Django', 'DRF', 'Celery', 'Redis', 'PostgreSQL','Docker'],
             live: 'https://encore-w2ay.onrender.com/encore/ ',
             github: 'https://github.com/Fraol-12/encore',
         },
