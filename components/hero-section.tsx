@@ -1,39 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
-import { Upload, X } from "lucide-react"
 
 export function HeroSection() {
-  const [profileImage, setProfileImage] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    // Load image from localStorage on mount, or set as hydrated
-    if (typeof window !== "undefined") {
-      const savedImage = localStorage.getItem("profileImage")
-      setProfileImage(savedImage)
-    }
-    setIsLoading(false)
-  }, [])
-
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-
-    const reader = new FileReader()
-    reader.onload = (event) => {
-      const imageData = event.target?.result as string
-      setProfileImage(imageData)
-      localStorage.setItem("profileImage", imageData)
-    }
-    reader.readAsDataURL(file)
-  }
-
-  const handleRemoveImage = () => {
-    setProfileImage(null)
-    localStorage.removeItem("profileImage")
-  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-8 pt-20">
@@ -131,38 +100,12 @@ export function HeroSection() {
               <div className="absolute inset-8 rounded-full border border-border/10" />
               
               {/* Center content */}
-              <div className="absolute inset-12 rounded-full bg-card flex items-center justify-center overflow-hidden group">
-                {!isLoading && profileImage ? (
-                  <div className="relative w-full h-full">
-                    <img
-                      src={profileImage}
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                    <button
-                      onClick={handleRemoveImage}
-                      className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity"
-                      title="Remove image"
-                    >
-                      <X size={16} className="text-white" />
-                    </button>
-                  </div>
-                ) : (
-                  <label className="w-full h-full flex flex-col items-center justify-center cursor-pointer hover:bg-secondary/50 transition-colors group">
-                    <input
-                      type="file"
-                      accept="image/*"
-                      onChange={handleImageUpload}
-                      className="hidden"
-                      aria-label="Upload profile image"
-                    />
-                    <div className="text-center">
-                      <Upload size={32} className="text-muted-foreground mx-auto mb-2 opacity-80" />
-                      <span className="text-sm text-muted-foreground">Upload Photo</span>
-                      <p className="text-xs text-muted-foreground mt-3 tracking-widest uppercase opacity-60">Est. 2024</p>
-                    </div>
-                  </label>
-                )}
+              <div className="absolute inset-12 rounded-full bg-card flex items-center justify-center overflow-hidden">
+                <img
+                  src="/profile.jpg"
+                  alt="Firaol Merga"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating badges */}
