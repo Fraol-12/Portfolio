@@ -12,7 +12,7 @@ const experiences = [
     description: "Pursuing BSc in Computer Science with focus on backend systems, databases, and AI fundamentals.",
   },
   {
-    period: "2024",
+    period: "2025",
     title: "Backend Engineering Graduate",
     organization: "ALX Africa",
     description: "Intensive program focused on production-ready backend systems, API design, and modern deployment practices.",

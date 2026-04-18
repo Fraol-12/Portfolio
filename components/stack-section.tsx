@@ -7,7 +7,7 @@ import { useRef } from "react"
 const stackCategories = [
   {
     title: "Languages",
-    items: ["Python", "JavaScript", "TypeScript", "SQL"],
+    items: ["Python", "JavaScript", "TypeScript"],
   },
   {
     title: "Backend",
