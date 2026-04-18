@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #ffffff; }
+        .text { fill: #000000; }
+      }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #1a1a1a; }
+        .text { fill: #ffffff; }
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="200" height="200"/>
+  <text x="100" y="120" font-family="Inter, sans-serif" font-size="80" font-weight="600" text-anchor="middle" class="text">FM</text>
+</svg>
