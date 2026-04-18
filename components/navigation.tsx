@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "./theme-toggle"
 
 const navItems = [
@@ -13,6 +13,7 @@ const navItems = [
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,13 +51,13 @@ export function Navigation() {
               </svg>
             </a>
 
-            {/* Navigation - Visible on all screens */}
-            <ul className="flex items-center gap-6 md:gap-10">
+            {/* Navigation - Hidden on mobile, visible on desktop */}
+            <ul className="hidden md:flex items-center gap-10">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className="text-xs md:text-sm text-muted-foreground transition-colors hover:text-foreground link-hover"
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground link-hover"
                   >
                     {item.label}
                   </a>
@@ -93,21 +94,53 @@ export function Navigation() {
               </a>
             </div>
 
-            {/* Mobile Actions */}
+            {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-3">
               <ThemeToggle />
-              <a
-                href="/Firaol_Merga_Resume_2026-03-15.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-foreground border border-border/60 px-3 py-2 rounded-full transition-all hover:bg-foreground hover:text-background"
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="relative w-8 h-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Toggle menu"
               >
-                Resume
-              </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </button>
             </div>
           </div>
         </nav>
       </motion.header>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-20 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur-xl border-b border-border/50"
+          >
+            <nav className="mx-auto max-w-6xl px-6 lg:px-8 py-4">
+              <ul className="flex flex-col gap-4">
+                {navItems.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground link-hover block py-2"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   )
 }

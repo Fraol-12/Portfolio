@@ -78,10 +78,28 @@ export function HeroSection() {
                 </svg>
               </a>
               <a
-                href="#contact"
+                href="/Firaol_Merga_Resume_2026-03-15.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3.5 rounded-full text-sm font-medium transition-all hover:bg-secondary"
               >
-                Get in Touch
+                Resume
+                <svg 
+                  width="12" 
+                  height="12" 
+                  viewBox="0 0 12 12" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="opacity-60"
+                >
+                  <path 
+                    d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" 
+                    stroke="currentColor" 
+                    strokeWidth="1.5" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </a>
             </motion.div>
           </div>
